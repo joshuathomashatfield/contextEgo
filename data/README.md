@@ -1,0 +1,1 @@
+Private source videos belong in raw/ (ignored). Processed roots contain manifest.json, procedure.json, splits.json and features/VIDEO_ID.npz. See ../docs/datasets.md. Synthetic features are fixtures only.

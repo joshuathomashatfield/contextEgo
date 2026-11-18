@@ -1,0 +1,2 @@
+aggregation: gru
+epochs: 5

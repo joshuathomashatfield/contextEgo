@@ -1,0 +1,9 @@
+# Experiment protocol
+
+The matrix consists of single-frame/no-memory plus 1, 2, 5, 10 seconds crossed with none, previous and history (13 runs). All use the same loaded feature archives, sample rate, split manifest, seed, aggregation and decoder. The matrix forces no smoothing. Compare decoder policies separately with train/validation-selected settings. Config files support the full common settings; CLI overrides support major experimental factors. Repeat matrix execution with --seed values and identical saved splits to assess optimization variability.
+
+Every run has a timestamp+UUID directory. Config, procedure, splits, model checkpoint (including training-only normalization), feature SHA256 hashes, framework versions, device, train duration, parameter count, selected checkpoint validation trajectory, per-video metrics and timestamped predictions are saved. Cache metadata captures source content hash, encoder identifier, sampling rate and preprocessing. Pin the public model revision in a future frozen environment before final publication; current public model identifiers are not an immutable model snapshot.
+
+Generate figures from matrix.json after execution. paired_comparisons.json reports participant/video cluster bootstrap differences against no-memory runs, including shorter-memory versus longer-no-memory comparisons. Do not select a favorable comparison after looking at test outcomes. Predeclare primary contrasts and an equivalence margin for H3 before real experiments; overlapping confidence intervals alone do not establish equivalence.
+
+Use validation videos for epochs, smoothing and any future transition-prior weight. Keep the final test set untouched until choices are fixed. Report per-video failures, deviations and group sizes. The included synthetic execution is a software integration check, not preliminary model evidence.

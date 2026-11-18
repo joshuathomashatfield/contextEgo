@@ -1,0 +1,15 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.env
+.venv/
+data/raw/*
+data/processed/*
+results/*
+*.pt
+*.npz
+.test-deps/
+.model_cache/
+build/
+dist/
+.vision-deps/

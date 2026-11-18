@@ -1,0 +1,1 @@
+Use pathlib and Python 3.10+. Run pytest and the synthetic smoke matrix after changes. Preserve causality: only predictions update memory, reset per video, never tune on test. Synthetic data are software fixtures, never evidence of visual recognition performance. Keep private data, caches and weights out of Git. Do not download models in tests.
